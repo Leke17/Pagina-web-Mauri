@@ -1,0 +1,97 @@
+/******LAYOUT*****/
+
+@import url('https://fonts.googleapis.com/css2?family=Alfa+Slab+One&family=Pacifico&family=Rubik+Mono+One&family=Share+Tech+Mono&display=swap');
+body{
+    font-family: "Alfa slab one";
+    background-color:#b5bac9;
+}
+
+.container{
+    width: 1000px;
+    max-width: 1000px;
+    margin: auto;
+    
+}
+
+/********INTRO*******/
+
+.intro{
+     display: grid;
+     grid-template-columns: 50% 50%;
+     margin-bottom: 64px;
+}
+.intro .text{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+.intro .text h1{
+    font-size: 55px;
+    line-height: none;
+}
+.intro .text a{
+    color: black;
+    margin-right: 16px;
+    
+}
+.avatar{
+    text-align: center;
+}
+.avatar img{
+    height: 400px;
+}
+
+/****PROJECTS*****/
+
+.projects {
+    display: grid;
+    grid-template-columns: 50% 50%;
+    margin-bottom: 64px;
+    border-bottom: 1px solid;
+    padding-bottom: 64px;
+    
+}
+
+.projects .description{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+.projects .description h3{
+    font-size: 18px;
+ }
+
+.projects .description a{
+    color: black;
+}
+
+.projects .description p{
+    color: #31363f;
+    padding-right: 15px;
+   
+
+}
+.projects .photo img{
+    width: 100%;
+}
+
+/* responsive */
+@media (width < 1000px) {
+    .intro {
+        grid-template-columns: 100%;
+        text-align: center;
+    }
+
+    .avatar img {
+        height: 300px;
+      }
+
+    .project {
+        grid-template-columns: 100%;
+    }
+
+    .project .description {
+        margin-bottom: 64px;
+    }
+}
+
